@@ -16,7 +16,6 @@
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
 - [Tweepy](https://www.tweepy.org/)
 - [Billboard API](https://github.com/guoguo12/billboard-charts)
-- [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 Install all the dependencies locally with:
 
