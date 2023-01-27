@@ -8,7 +8,7 @@
 
 ## :hammer: Tools
 
-- [Twitter Developer Platform](https://developer.twitter.com/en) for the Twitter bot.
+- [Twitter Developer Platform](https://developer.twitter.com/en)
 
 ## :bookmark_tabs: Dependencies
 
