@@ -1,12 +1,8 @@
-from dotenv import load_dotenv
-import os
 from datetime import date
 from config import create_api
 import random
 import billboard
 
-load_dotenv()
-api_key = os.getenv("NASA_API_KEY")
 api = create_api()
 
 def create_daily_tweet_content():
