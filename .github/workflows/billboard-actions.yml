@@ -2,7 +2,7 @@ name: billboard - Post Tweet
 
 on:
   schedule:
-    # Runs at 9am UTC
+    # Runs at 3am UTC -- 7pm PST
     - cron: "0 3 * * *"
   workflow_dispatch:
 jobs:
