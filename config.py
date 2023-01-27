@@ -5,10 +5,10 @@ logger = logging.getLogger()
 
 
 def create_api():
-    api_key = 'kjPmXkwmi6MVrYdOi6PtNSTxr'
-    api_key_secret = 'vRZKJ3QTLh58TWRdEIm8O4RAKOAxxh9OliwbxAdBmjW31iwsr3'
-    access_token = '773736831112339456-KMSYlbxp8k5oSONBc9i3XDzjzP8SRJM'
-    access_token_secret = 'jMlasQSOcvHYMV90sw7tbLo5fACrEYVeQUXHPWWa7tI95'
+    api_key = secrets.TWITTER_API_KEY
+    api_key_secret = secrets.TWITTER_API_KEY_SECRET
+    access_token = secrets.TWITTER_ACCESS_TOKEN
+    access_token_secret = secrets.TWITTER_ACCESS_TOKEN_SECRET
 
     auth = tweepy.OAuthHandler(api_key, api_key_secret)
     auth.set_access_token(access_token, access_token_secret)
