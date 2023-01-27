@@ -5,6 +5,7 @@
 ## :hammer: Tools
 
 - [Twitter Developer Platform](https://developer.twitter.com/en) for the Twitter bot.
+- [Billboard API](https://github.com/guoguo12/billboard-charts) for the Billboard API by Allen Guo. 
 
 ## :bookmark_tabs: Dependencies
 
