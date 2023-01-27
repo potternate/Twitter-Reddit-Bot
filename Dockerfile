@@ -7,4 +7,4 @@ ADD config.py /config.py
 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["python3", "/lookup.py"]
+ENTRYPOINT ["python3", "/billboard.py"]
