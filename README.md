@@ -1,5 +1,5 @@
 <h1>
-  Look Up
+  Throwback Charts Twitter Bot
 </h1>
 
 ## :hammer: Tools
