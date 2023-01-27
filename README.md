@@ -24,7 +24,5 @@ pip3 install -r requirements.txt
 Launch the application with:
 
 ```bash
-python3 lookup.py
+python3 billboard.py
 ```
-
----
