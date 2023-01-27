@@ -9,9 +9,6 @@ inputs:
   TWITTER_API_KEY_SECRET:
     description: "Twitter API key secret"
     required: true
-  TWITTER_BEARER_TOKEN:
-    description: "Twitter Bearer token"
-    required: true
   TWITTER_ACCESS_TOKEN:
     description: "Twitter access token"
     required: true
