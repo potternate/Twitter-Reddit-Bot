@@ -28,7 +28,3 @@ python3 lookup.py
 ```
 
 ---
-
-_Do :star: the repository if you find the project interesting, that would make my day._
-
-<a href="https://www.buymeacoffee.com/chomelcl" target="_blank"><img src="./assets/img/bmc-button.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
