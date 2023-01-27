@@ -2,9 +2,9 @@
   Throwback Charts Twitter Bot
 </h1>
 
-## :bird: Twitter @ThrowbackCharts
+## :bird: Twitter Profile
 
-- [@ThrowbackCharts](https://twitter.com/ThrowbackCharts) for the Twitter page.
+- [@ThrowbackCharts](https://twitter.com/ThrowbackCharts)
 
 ## :hammer: Tools
 
