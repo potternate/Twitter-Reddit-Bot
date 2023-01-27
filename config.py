@@ -1,6 +1,5 @@
 import tweepy
 import logging
-import secrets
 
 logger = logging.getLogger()
 
