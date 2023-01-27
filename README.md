@@ -9,13 +9,13 @@
 ## :hammer: Tools
 
 - [Twitter Developer Platform](https://developer.twitter.com/en) for the Twitter bot.
-- [Billboard API](https://github.com/guoguo12/billboard-charts) for the Billboard API by Allen Guo. 
 
 ## :bookmark_tabs: Dependencies
 
 - [Python 3](https://www.python.org/downloads/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
 - [Tweepy](https://www.tweepy.org/)
+- [Billboard API](https://github.com/guoguo12/billboard-charts)
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 Install all the dependencies locally with:
