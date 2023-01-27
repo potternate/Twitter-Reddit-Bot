@@ -1,3 +1,2 @@
 tweepy==3.10.0
 billboard.py==7.0.0
-Pillow
