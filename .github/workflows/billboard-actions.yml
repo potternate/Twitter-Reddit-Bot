@@ -3,7 +3,7 @@ name: billboard - Post Tweet
 on:
   schedule:
     # Runs at 9am UTC
-    - cron: "0 9 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch:
 jobs:
   post_tweet:
