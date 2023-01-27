@@ -1,10 +1,10 @@
 <h1>
-  Throwback Charts Twitter Bot
+  Billboard Rewind Twitter Bot
 </h1>
 
 ## :bird: Twitter Profile
 
-- [@ThrowbackCharts](https://twitter.com/ThrowbackCharts)
+- [@BillboardRewind](https://twitter.com/billboardrewind)
 
 ## :hammer: Tools
 
