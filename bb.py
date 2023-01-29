@@ -54,11 +54,11 @@ def send_tweet(content):
     return tweet
 
 def create_daily_tweet():
-    content = create_daily_tweet_content()
+    tweet_content = create_daily_tweet_content()
     # print generated content to the console
     print(f"Generated tweet: \n{content}")
     # return tweet to get tweet_id for subtweet
-    return send_tweet(content)
+    return send_tweet(tweet_content)
 
 if __name__ == "__main__":
     create_daily_tweet()
