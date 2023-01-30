@@ -24,7 +24,7 @@ def create_daily_tweet_content():
             which_chart = random.randint(2,7)
     elif which_chart == 2:
         if int(year) > 1991:
-            radio = billboard.ChartData('top-album-sales', date = year + str(today)[4:])
+            radio = billboard.ChartData('radio-songs', date = year + str(today)[4:])
             content = "Top Radio Songs today in " + year + "\n" + "#1 " + str(radio[0]) + "\n" + "#2 " + str(radio[1]) + "\n" + "#3 " + str(radio[2])
         else:
             which_chart = random.randint(4,7)        
