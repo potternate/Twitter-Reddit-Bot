@@ -43,7 +43,7 @@ def create_daily_tweet_content():
     elif which_chart == 6:
         rbhiphop = billboard.ChartData('r-b-hip-hop-songs', date = year + str(today)[4:])
         content = "Top R&B/Hip-Hop Songs today in " + year + "\n" + "#1 " + str(rbhiphop[0]) + "\n" + "#2 " + str(rbhiphop[1]) + "\n" + "#3 " + str(rbhiphop[2])
-    elif which_chart == 7:
+    else:
         hot_100 = billboard.ChartData('hot-100', date = year + str(today)[4:])
         content = "Billboard Hot 100 today in " + year + "\n" + "#1 " + str(hot_100[0]) + "\n" + "#2 " + str(hot_100[1]) + "\n" + "#3 " + str(hot_100[2])
                       
@@ -54,11 +54,11 @@ def send_tweet(content):
     return tweet
 
 def create_daily_tweet():
-    tweet_content = create_daily_tweet_content()
+    content = create_daily_tweet_content()
     # print generated content to the console
     print(f"Generated tweet: \n{content}")
     # return tweet to get tweet_id for subtweet
-    return send_tweet(tweet_content)
+    return send_tweet(content)
 
 if __name__ == "__main__":
     create_daily_tweet()
