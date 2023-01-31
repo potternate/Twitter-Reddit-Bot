@@ -3,6 +3,9 @@ import requests
 from config import create_api, create_reddit_instance
 import os
 
+# Subreddit 
+subreddit = 'rareinsults'
+
 # Create Twitter API
 api = create_api()
 
@@ -37,4 +40,4 @@ def tweet_image(url, message):
 
 if __name__ == '__main__':
     random_number = random.randint(0,9)
-    tweet_image(url=image_urls()[random_number], message=image_titles()[random_number])
+    tweet_image(url=image_urls(subreddit)[random_number], message=image_titles(subreddit)[random_number])
