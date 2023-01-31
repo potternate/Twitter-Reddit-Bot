@@ -1,10 +1,10 @@
 <h1>
-  Rare Roasts Twitter Bot
+  Internet Roasts Twitter Bot
 </h1>
 
 ## :bird: Twitter Profile
 
-- [@RareRoasts](https://twitter.com/rareroasts)
+- [@InternetRoasts](https://twitter.com/internetroasts)
 
 ## :hammer: Tools
 
