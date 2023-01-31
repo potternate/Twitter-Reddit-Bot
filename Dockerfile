@@ -2,9 +2,9 @@
 FROM python:3.8.10
 
 ADD requirements.txt /requirements.txt
-ADD bb.py /bb.py
+ADD rr.py /rr.py
 ADD config.py /config.py
 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["python3", "/bb.py"]
+ENTRYPOINT ["python3", "/rr.py"]
