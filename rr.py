@@ -27,7 +27,7 @@ def image_titles(sub):
         titles.append(title)
     return titles
 
-def tweet_image(url, message):
+def tweet_image(message, url):
     filename = 'temp.jpg'
     request = requests.get(url, stream=True)
     if request.status_code == 200:
@@ -35,11 +35,12 @@ def tweet_image(url, message):
             for chunk in request:
                 image.write(chunk)
 
-        api.update_status_with_media(status=message, filename = filename)
+        tweet = api.update_status_with_media(status=message, filename = filename)
         os.remove(filename)
+        return tweet
     else:
         print("Unable to download image")
 
 if __name__ == '__main__':
     random_number = random.randint(0,9)
-    tweet_image(url=image_urls(subreddit)[random_number], message=image_titles(subreddit)[random_number])
+    tweet_image(message=image_titles(subreddit)[random_number], url=image_urls(subreddit)[random_number])
