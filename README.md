@@ -28,5 +28,5 @@ pip3 install -r requirements.txt
 Launch the application with:
 
 ```bash
-python3 billboard.py
+python3 rr.py
 ```
