@@ -9,6 +9,7 @@
 ## :hammer: Tools
 
 - [Twitter Developer Platform](https://developer.twitter.com/en)
+- [Reddit API](https://www.reddit.com/dev/api/)
 
 ## :bookmark_tabs: Dependencies
 
