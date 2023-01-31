@@ -35,7 +35,7 @@ def tweet_image(message, url):
             for chunk in request:
                 image.write(chunk)
 
-        tweet = api.update_status_with_media(status=message, filename = filename)
+        tweet = api.update_with_media(status=message, filename = filename)
         os.remove(filename)
         return tweet
     else:
