@@ -15,7 +15,7 @@
 - [Python 3](https://www.python.org/downloads/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
 - [Tweepy](https://www.tweepy.org/)
-- [PRAW](https://github.com/guoguo12/billboard-charts)
+- [PRAW](https://praw.readthedocs.io/en/stable/)
 
 Install all the dependencies locally with:
 
