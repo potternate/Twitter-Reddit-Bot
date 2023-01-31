@@ -1,6 +1,6 @@
-name: "Billboard Twitter Bot"
+name: "Rare Roats Twitter Bot"
 author: Nate Potter
-description: "A twitter bot that publishes billboard charts"
+description: "A bot that scrapes Reddit r/rareinsults and reposts images with captions on Twitter"
 
 inputs:
   TWITTER_API_KEY:
@@ -14,6 +14,18 @@ inputs:
     required: true
   TWITTER_ACCESS_TOKEN_SECRET:
     description: "Twitter access token secret"
+    required: true
+  REDDIT_CLIENT_ID:
+    description: "Reddit client ID"
+    required: true
+  REDDIT_CLIENT_SECRET:
+    description: "Reddit client secret"
+    required: true
+  REDDIT_USERNAME:
+    description: "Reddit username"
+    required: true
+  REDDIT_PASSWORD:
+    description: "Reddit password"
     required: true
 
 runs:
