@@ -1,10 +1,10 @@
 <h1>
-  Billboard Rewind Twitter Bot
+  Rare Roasts Twitter Bot
 </h1>
 
 ## :bird: Twitter Profile
 
-- [@BillboardRewind](https://twitter.com/billboardrewind)
+- [@RareRoasts](https://twitter.com/rareroasts)
 
 ## :hammer: Tools
 
