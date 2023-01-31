@@ -1,9 +1,9 @@
-name: billboard - Post Tweet
+name: Rare Roasts - Post Tweet
 
 on:
   schedule:
-    # Runs at 0 minutes past the hour, every 8 hours (3 Tweets/Day). 
-    - cron: "0 */8 * * *"
+    # Runs at 0 minutes past the hour, every 4 hours (6 Tweets/Day). 
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 jobs:
   post_tweet:
@@ -16,3 +16,7 @@ jobs:
           TWITTER_API_KEY_SECRET: ${{ secrets.TWITTER_API_KEY_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
+          REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
