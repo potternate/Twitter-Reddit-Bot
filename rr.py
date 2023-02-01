@@ -14,7 +14,7 @@ reddit = create_reddit_instance()
 
 def image_urls(sub):
     urls = []
-    for submission in reddit.subreddit(sub).hot(limit=10):
+    for submission in reddit.subreddit(sub).top(limit=1000):
         url = submission.url
         if url.endswith(('.jpg', '.png', '.gif', '.jpeg')):
             urls.append(url)
@@ -22,7 +22,7 @@ def image_urls(sub):
 
 def image_titles(sub):
     titles = []
-    for submission in reddit.subreddit(sub).hot(limit=10):
+    for submission in reddit.subreddit(sub).top(limit=1000):
         title = submission.title
         url = submission.url
         if url.endswith(('.jpg', '.png', '.gif', '.jpeg')):
