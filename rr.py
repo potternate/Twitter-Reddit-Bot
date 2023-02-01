@@ -4,7 +4,7 @@ from config import create_api, create_reddit_instance
 import os
 
 # Subreddit 
-subreddit = 'rareinsults'
+subreddit = 'bossfight'
 
 # Create Twitter API
 api = create_api()
