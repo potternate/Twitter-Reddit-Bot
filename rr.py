@@ -24,7 +24,8 @@ def image_titles(sub):
     titles = []
     for submission in reddit.subreddit(sub).hot(limit=10):
         title = submission.title
-        titles.append(title)
+        if url.endswith(('.jpg', '.png', '.gif', '.jpeg')):
+            titles.append(title)
     return titles
 
 def tweet_image(message, url):
