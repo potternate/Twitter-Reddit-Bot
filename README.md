@@ -1,5 +1,5 @@
 <h1>
-  Internet Roasts Twitter Bot
+  Reddit Scraping Twitter Bot
 </h1>
 
 ## :bird: Twitter Profile
