@@ -17,7 +17,7 @@ def image_urls(sub):
     for submission in reddit.subreddit(sub).top('day'):
         url = submission.url
         title = submission.title
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<140:
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280:
             urls.append(url)
     return urls
 
@@ -26,7 +26,7 @@ def image_titles(sub):
     for submission in reddit.subreddit(sub).top('day'):
         title = submission.title
         url = submission.url
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<140:
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280:
             titles.append(title)
     return titles
 
