@@ -1,4 +1,4 @@
-name: Rare Roasts - Post Tweet
+name: Scrape Reddit and Post Tweet
 
 on:
   schedule:
