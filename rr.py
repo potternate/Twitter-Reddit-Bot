@@ -3,7 +3,7 @@ import requests
 from config import create_api, create_reddit_instance
 import os
 
-# Subreddit 
+# Subreddits in Custom Feed 
 subreddits = ['abandonedporn',
               'architectureporn',
               'damnthatsinteresting',
