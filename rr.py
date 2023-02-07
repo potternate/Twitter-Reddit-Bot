@@ -53,6 +53,6 @@ def tweet_image(message, url):
         print("Unable to download image")
 
 if __name__ == '__main__':
-    random_sub = random.randint(0, len(subreddits))
-    random_post = random.randint(0,len(image_urls(subreddits[random_sub])))
+    random_sub = random.randint(0, len(subreddits)-1)
+    random_post = random.randint(0,len(image_urls(subreddits[random_sub]))-1)
     tweet_image(message=image_titles(subreddits[random_sub])[random_post], url=image_urls(subreddits[random_sub])[random_post])
