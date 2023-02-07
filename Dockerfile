@@ -1,4 +1,3 @@
-
 FROM python:3.8.10
 
 ADD requirements.txt /requirements.txt
