@@ -6,12 +6,17 @@ import os
 # Subreddits in Custom Feed 
 subreddits = ['abandonedporn',
               'architectureporn',
+              'cityporn', 
               'damnthatsinteresting',
+              'designporn', 
+              'exposureporn', 
+              'houseporn', 
+              'interestingasfuck', 
               'macroporn',
+              'mapporn', 
               'microporn',
               'natureisfuckinglit',
               'oldphotosinreallife', 
-              'interestingasfuck', 
               'spaceporn']
 
 # Create Twitter API
