@@ -4,15 +4,16 @@ from config import create_api, create_reddit_instance
 import os
 
 # Subreddits in Custom Feed 
-subreddits = ['abandonedporn',
-              'architectureporn',
+subreddits = ['abandonedporn', 
+              'architectureporn', 
               'cityporn', 
-              'damnthatsinteresting',
+              'damnthatsinteresting', 
               'designporn', 
               'exposureporn', 
+              'historyporn', 
               'interestingasfuck', 
               'mapporn', 
-              'natureisfuckinglit',
+              'natureisfuckinglit', 
               'oldphotosinreallife', 
               'spaceporn']
 
