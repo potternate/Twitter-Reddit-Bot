@@ -1,6 +1,6 @@
-name: "Rare Roats Twitter Bot"
+name: "Peep This Pic"
 author: Nate Potter
-description: "A bot that scrapes Reddit r/rareinsults and reposts images with captions on Twitter"
+description: "A bot that scrapes a custom list of subreddits and reposts images with captions on Twitter"
 
 inputs:
   TWITTER_API_KEY:
