@@ -4,7 +4,15 @@ from config import create_api, create_reddit_instance
 import os
 
 # Subreddit 
-subreddit = 'interestingasfuck'
+subreddits = ['abandonedporn',
+              'architectureporn',
+              'damnthatsinteresting',
+              'macroporn',
+              'microporn',
+              'natureisfuckinglit',
+              'oldphotosinreallife', 
+              'interestingasfuck', 
+              'spaceporn']
 
 # Create Twitter API
 api = create_api()
@@ -45,5 +53,6 @@ def tweet_image(message, url):
         print("Unable to download image")
 
 if __name__ == '__main__':
-    random_number = random.randint(0,len(image_urls(subreddit)))
-    tweet_image(message=image_titles(subreddit)[random_number], url=image_urls(subreddit)[random_number])
+    random_sub = random.randint(0, len(subreddits)
+    random_post = random.randint(0,len(image_urls(subreddits[random_sub])))
+    tweet_image(message=image_titles(subreddits[random_sub])[random_post], url=image_urls(subreddits[random_sub])[random_post])
