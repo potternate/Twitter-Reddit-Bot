@@ -2,6 +2,7 @@ import random
 import requests
 from config import create_api, create_reddit_instance
 import os
+import re
 
 # Subreddits in Custom Feed 
 subreddits = ['abandonedporn', 
@@ -38,7 +39,8 @@ def image_titles(sub):
         title = submission.title
         url = submission.url
         if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280:
-            titles.append(title)
+            tclean = re.sub("[\[].*?[\]]", "", title)
+            titles.append(tclean)
     return titles
 
 def tweet_image(message, url):
