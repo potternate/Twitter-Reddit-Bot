@@ -1,4 +1,4 @@
 tweepy
 praw
 python-dotenv
-re
+regex
