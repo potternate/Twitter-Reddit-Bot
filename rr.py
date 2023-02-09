@@ -2,7 +2,7 @@ import random
 import requests
 from config import create_api, create_reddit_instance
 import os
-import re
+import regex
 
 # Subreddits in Custom Feed 
 subreddits = ['abandonedporn', 
@@ -39,7 +39,7 @@ def image_titles(sub):
         title = submission.title
         url = submission.url
         if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280:
-            tclean = re.sub("[\[].*?[\]]", "", title)
+            tclean = regex.sub("[\[].*?[\]]", "", title)
             titles.append(tclean)
     return titles
 
