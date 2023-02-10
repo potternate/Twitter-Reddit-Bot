@@ -15,7 +15,6 @@ subreddits = ['abandonedporn',
               'interestingasfuck', 
               'mapporn', 
               'natureisfuckinglit', 
-              'oldphotosinreallife', 
               'spaceporn']
 
 # Create Twitter API
