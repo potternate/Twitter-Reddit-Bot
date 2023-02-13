@@ -13,8 +13,6 @@ subreddits = ['abandonedporn',
               'exposureporn', 
               'historyporn', 
               'interestingasfuck', 
-              'mapporn', 
-              'natureisfuckinglit', 
               'spaceporn']
 
 # Create Twitter API
@@ -38,7 +36,7 @@ def image_titles(sub):
         title = submission.title
         url = submission.url
         if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280:
-            tclean = regex.sub("[\[].*?[\]]", "", title)
+            tclean = regex.sub("[\(\[].*?[\)\]]", "", title)
             titles.append(tclean)
     return titles
 
