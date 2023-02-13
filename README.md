@@ -4,7 +4,7 @@
 
 ## :bird: Twitter Profile
 
-- [@PeepThisPic](https://twitter.com/PeepThisPic)
+- [@peepthispic](https://twitter.com/PeepThisPic)
 
 ## :hammer: Tools
 
