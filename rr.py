@@ -15,6 +15,7 @@ subreddits = ['abandonedporn',
               'exposureporn', 
               'historyporn', 
               'interestingasfuck', 
+              'militaryporn', 
               'oldschoolcool', 
               'spaceporn']
 
