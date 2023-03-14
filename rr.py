@@ -7,6 +7,7 @@ import regex
 # Subreddits in Custom Feed 
 subreddits = ['abandonedporn', 
               'architectureporn', 
+              'artefactporn', 
               'beamazed', 
               'cityporn', 
               'damnthatsinteresting', 
