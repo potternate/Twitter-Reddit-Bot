@@ -3,23 +3,7 @@ import requests
 from config import create_api, create_reddit_instance
 import os
 import regex
-
-# Subreddits in Custom Feed 
-subreddits = ['abandonedporn', 
-              'architectureporn', 
-              'artefactporn', 
-              'beamazed', 
-              'carporn', 
-              'cityporn', 
-              'damnthatsinteresting', 
-              'designporn', 
-              'earthporn',
-              'exposureporn', 
-              'historyporn', 
-              'interestingasfuck', 
-              'militaryporn', 
-              'oldschoolcool', 
-              'spaceporn']
+from CustomFeed import subreddits
 
 # Create Twitter API
 api = create_api()
@@ -61,6 +45,6 @@ def tweet_image(message, url):
         print("Unable to download image")
 
 if __name__ == '__main__':
-    random_sub = random.randint(0, len(subreddits)-1)
-    random_post = random.randint(0,len(image_urls(subreddits[random_sub]))-1)
-    tweet_image(message=image_titles(subreddits[random_sub])[random_post], url=image_urls(subreddits[random_sub])[random_post])
+    rand_sub = random.choice(subreddits)
+    rand_post = random.randint(0,len(image_urls(rand_sub))-1)
+    tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
