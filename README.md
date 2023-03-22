@@ -31,8 +31,11 @@ Launch the application with:
 ```bash
 python3 tweetJob.py
 ```
+
+Just make sure to enter your Twitter Developer credentials into [config.py](https://github.com/potternate/twitterbot/blob/main/config.py)
+
+
 ## 📜: Custom Feed
 
 You can take a look at the custom feed in the file [CustomFeed.py](https://github.com/potternate/twitterbot/blob/main/CustomFeed.py)
 
-I made this a separate file to make updating the feed easy when I discover a new subreddit or get tired of an old subreddit. 
