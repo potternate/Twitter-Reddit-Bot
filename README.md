@@ -32,10 +32,10 @@ Launch the application with:
 python3 tweetJob.py
 ```
 
-Just make sure to enter your Twitter Developer credentials into [config.py](https://github.com/potternate/twitterbot/blob/main/config.py)
+Just make sure to enter your Twitter Developer and Reddit credentials into [config.py](https://github.com/potternate/twitterbot/blob/main/config.py). 
 
 
 ## 📜: Custom Feed
 
-You can take a look at the custom feed in the file [CustomFeed.py](https://github.com/potternate/twitterbot/blob/main/CustomFeed.py)
+You can take a look at the custom feed in the file [CustomFeed.py](https://github.com/potternate/twitterbot/blob/main/CustomFeed.py). 
 
