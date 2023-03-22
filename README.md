@@ -29,7 +29,7 @@ pip3 install -r requirements.txt
 Launch the application with:
 
 ```bash
-python3 rr.py
+python3 tweetJob.py
 ```
 ## 📜: Custom Feed
 
