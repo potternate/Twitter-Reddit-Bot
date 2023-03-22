@@ -33,5 +33,6 @@ python3 rr.py
 ```
 ## 📜: Custom Feed
 
-- You can take a look at the custom feed in the file [CustomFeed.py](https://github.com/potternate/twitterbot/blob/main/CustomFeed.py)
-- I made this a separate file to make updating the feed easy when I discover a new subreddit or get tired of an old subreddit. 
+You can take a look at the custom feed in the file [CustomFeed.py](https://github.com/potternate/twitterbot/blob/main/CustomFeed.py)
+
+I made this a separate file to make updating the feed easy when I discover a new subreddit or get tired of an old subreddit. 
