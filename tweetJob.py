@@ -52,7 +52,7 @@ def tweet_image(message, url):
 if __name__ == '__main__':
     rand_sub = random.choice(subreddits)
     rand_post = random.randint(0,len(image_urls(rand_sub))-1)
-    past_tweets = api.user_timeline((api.get_user(screen_name='peepthispic')).id_str)
+    past_tweets = api.user_timeline(screen_name='peepthispic')
     for tweet in past_tweets:
         if image_titles(rand_sub)[rand_post] == tweet.text:
             print("Already Tweeted")
