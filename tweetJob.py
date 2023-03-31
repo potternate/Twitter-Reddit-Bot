@@ -60,5 +60,5 @@ if __name__ == '__main__':
             print("Already Tweeted")
         else:
             pass
-    if unique = True:
+    if unique == True:
         tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
