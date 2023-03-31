@@ -53,8 +53,12 @@ if __name__ == '__main__':
     rand_sub = random.choice(subreddits)
     rand_post = random.randint(0,len(image_urls(rand_sub))-1)
     past_tweets = api.user_timeline(screen_name='peepthispic')
+    unique = True
     for tweet in past_tweets:
         if image_titles(rand_sub)[rand_post] == tweet.text:
+            unique = False
             print("Already Tweeted")
         else:
-            tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
+            pass
+    if unique = True:
+        tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
