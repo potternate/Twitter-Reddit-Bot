@@ -11,6 +11,7 @@ api = create_api()
 # Create an instance of Reddit class
 reddit = create_reddit_instance()
 
+# Get up to 10 image urls that meet Twitter standards
 def image_urls(sub):
     urls = []
     for submission in reddit.subreddit(sub).top('day', limit=10):
@@ -20,6 +21,7 @@ def image_urls(sub):
             urls.append(url)
     return urls
 
+# Get up to 10 image captions that Twitter standards
 def image_titles(sub):
     titles = []
     for submission in reddit.subreddit(sub).top('day', limit=10):
@@ -30,6 +32,7 @@ def image_titles(sub):
             titles.append(tclean)
     return titles
 
+# Tweet image with caption
 def tweet_image(message, url):
     filename = 'temp.jpg'
     request = requests.get(url, stream=True)
@@ -44,7 +47,14 @@ def tweet_image(message, url):
     else:
         print("Unable to download image")
 
+    
+# Get a random sub from custom feed and tweet a random image from the approved images
 if __name__ == '__main__':
     rand_sub = random.choice(subreddits)
     rand_post = random.randint(0,len(image_urls(rand_sub))-1)
-    tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
+    past_tweets = api.user_timeline('peepthispic', count=5)
+    for tweet in past_tweets:
+        if image_titles(rand_sub)[rand_post] == tweet.text:
+            print("Already Tweeted")
+        else:
+            tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
