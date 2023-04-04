@@ -17,7 +17,7 @@ def image_urls(sub):
     for submission in reddit.subreddit(sub).top('day', limit=10):
         url = submission.url
         title = submission.title
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', ' my', ' I', 'I ']) == False):
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', 'my ', 'I ']) == False):
             urls.append(url)
     return urls
 
@@ -27,7 +27,7 @@ def image_titles(sub):
     for submission in reddit.subreddit(sub).top('day', limit=10):
         title = submission.title
         url = submission.url
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', ' my', ' I', 'I ']) == False):
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', 'my ', 'I ']) == False):
             tclean = regex.sub("[\{\(\[].*?[\}\)\]]", "", title)
             titles.append(tclean)
     return titles
