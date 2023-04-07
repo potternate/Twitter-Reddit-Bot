@@ -18,7 +18,7 @@ banned_strings = ['My ', ' my ', 'I ', ' OC', ' by me']
 # Get up to 10 image urls that meet Twitter standards
 def image_urls(sub):
     urls = []
-    for submission in reddit.subreddit(sub).top('day', limit=10):
+    for submission in reddit.subreddit(sub).top(time_filter='day', limit=10):
         url = submission.url
         title = submission.title
         if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in banned_strings) == False):
@@ -28,7 +28,7 @@ def image_urls(sub):
 # Get up to 10 image captions that Twitter standards
 def image_titles(sub):
     titles = []
-    for submission in reddit.subreddit(sub).top('day', limit=10):
+    for submission in reddit.subreddit(sub).top(time_filter='day', limit=10):
         title = submission.title
         url = submission.url
         if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in banned_strings) == False):
