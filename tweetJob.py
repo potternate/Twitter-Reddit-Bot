@@ -11,13 +11,17 @@ api = create_api()
 # Create an instance of Reddit class
 reddit = create_reddit_instance()
 
+# Custom Parameters
+tw_username = 'peepthispic'
+banned_strings = ['My ', ' my ', 'I ', ' OC', ' by me']
+
 # Get up to 10 image urls that meet Twitter standards
 def image_urls(sub):
     urls = []
     for submission in reddit.subreddit(sub).top('day', limit=10):
         url = submission.url
         title = submission.title
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', ' my ', 'I ', ' OC']) == False):
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in banned_strings) == False):
             urls.append(url)
     return urls
 
@@ -27,7 +31,7 @@ def image_titles(sub):
     for submission in reddit.subreddit(sub).top('day', limit=10):
         title = submission.title
         url = submission.url
-        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in ['My ', ' my ', 'I ', ' OC']) == False):
+        if url.endswith(('.jpg', '.png', '.jpeg')) and len(title)<280 and (any(substring in title for substring in banned_strings) == False):
             tclean = regex.sub("[\{\(\[].*?[\}\)\]]", "", title)
             titles.append(tclean)
     return titles
@@ -52,12 +56,13 @@ def tweet_image(message, url):
 if __name__ == '__main__':
     rand_sub = random.choice(subreddits)
     rand_post = random.randint(0,len(image_urls(rand_sub))-1)
-    past_tweets = api.user_timeline(screen_name='peepthispic')
+    past_tweets = api.user_timeline(screen_name=tw_username)
     unique = True
     for tweet in past_tweets:
         if image_titles(rand_sub)[rand_post] == tweet.text:
             unique = False
             print("Already Tweeted")
+            break
         else:
             pass
     if unique == True:
