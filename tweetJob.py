@@ -56,13 +56,4 @@ def tweet_image(message, url):
 if __name__ == '__main__':
     rand_sub = random.choice(subreddits)
     rand_post = random.randint(0,len(image_urls(rand_sub))-1)
-    unique = True
-    for tweet in api.user_timeline(screen_name=tw_username):
-        if image_titles(rand_sub)[rand_post] == tweet.text:
-            unique = False
-            print("Already Tweeted")
-            break
-        else:
-            pass
-    if unique == True:
-        tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
+    tweet_image(message=image_titles(rand_sub)[rand_post], url=image_urls(rand_sub)[rand_post])
